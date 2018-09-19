@@ -20,8 +20,15 @@
     
     .titulo {
     padding: 1px 0px 1px 0px;
+    font-weight: bold;
+    color:black;
     }
 
     .black{
         color:#000;
+    }
+
+    .sub-titulos{
+        font-weight: bold;
+        color:black;
     }
