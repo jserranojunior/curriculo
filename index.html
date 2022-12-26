@@ -1,173 +1,348 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="corporate">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Jorge Serrano Junior</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            print: { raw: "print" },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+  <!--   <link rel="stylesheet" href="style.css">
+ -->
 </head>
 
 <body>
-  <div class="container">
-    <div class="row row-margin-topo">
-      <div class="col-5 text-left">
-        Nascimento: 10/06/1993 - São Paulo, SP <br>
-        Rua Francisco Monteiro - CEP: 08062-190
+  <div class="mx-auto mt-4 print:mt-0 mx-80 print:mx-0 text-xs">
+    <div class="flex flex-wrap">
+      <div class="w-1/2 text-left">
+        Nascimento: 10/06/1993 - São Paulo, SP <br />
+        Rua Francisco Monteiro - CEP: 08062-190 <br />
+        Github:
+        <a href="http://github.com/jserranojunior">www.github.com/jserranojunior</a>
+        <br />
       </div>
-      <div class="col-5 offset-2 text-right">
-        Celular: (11) 94643-9695  <br>
-        E-mail: jorgeserranojunior@hotmail.com
+      <div class="w-1/2 offset-2 text-right">
+        Celular / Whatsapp: <span class="font-bold">(11) 94643-9695</span><br />
+        E-mail: jorgeserranojunior@hotmail.com <br />
+        Portfolio:
+        <a href="http://www.alvitre.net/portfolio">www.alvitre.com.br/portfolio</a>
       </div>
     </div>
 
-    <div class="row row-margin">
-      <div class="col-12 ">
-        <div class="titulo bg-info text-white">
-          <h1 class="text-center">JORGE SERRANO JUNIOR</h1>
+    <div class="flex flex-wrap">
+      <div class="w-full mt-1">
+        <div class="titulo bg-blue-500 text-white print:text-black p-1 my-1 rounded-md">
+          <h1 class="text-center text-xl font-bold">JORGE SERRANO JUNIOR</h1>
+          <div class="print:border-b print:mt-1">
+
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="row row-margin">
-      <div class="col-2">
-        <h6>EXPERIÊNCIAS</h6>
-      </div>
-
-      <div class="col-10">
-        <ul>
-          <li>VDLAP / LS STAR- ANALISTA DE INFORMÁTICA (02-2017 - atual)</li>
-          <ul>
-            <li>Desenvolvimento de sistema ERP das duas empresas em Laravel</li>
-            <li>Criação e manutenção do website da empresa com lumen</li>
-            <li>Suporte a usuários, manutenção de rede, servidores linux e windows</li>
-            <li>Responsavel por toda área de tecnologia da empresa</li>
-          </ul>
-        </ul>
-
-        <ul>
-          <li>SUPORTE FS - SUPORTE TÉCNICO (02/2016 - 01-2017)</li>
-          <ul>
-            <li>Desenvolvimento de sistema ERP, migração de ASP clássico para ASP.NET</li>
-            <li>Criação e manutenção do website da empresa na linguagem PHP</li>
-            <li>Suporte a usuários, manutenção de hardware e software</li>
-            <li>DBA SQL SERVER e MYSQL</li>
-          </ul>
-        </ul>
-
-        <!-- <ul>
-          <li>FÊNIX TREINAMENTO PROFISSIONAL - SUPORTE TÉCNICO (02/2015 – 09/2015)</li>
-          <ul>
-            <li>Criação e manutenção de site e sistema interno da empresa</li>
-            <li>Suporte a usuários, manutenção de hardware e software</li>
-            <li>Ministração de palestras para usuários</li>
-            <li>DBA MYSQL</li>
-          </ul>
-        </ul> -->
-
-        <ul>
-          <li>FACULDADE CARLOS DRUMMOND DE ANDRADE</li>
-          <ul>
-            <li>MONITOR EM LABORATÓRIO DE INFORMÁTICA (04/2012 – 01/2015)</li>
-            <li>Suporte a usuários, manutenção de hardware e software</li>
-            <li>Instalação de recursos áudio visuais, cabeamento estruturado</li>
-            <li>Controle de acessos Proxy, Active Directory, protocolos de rede</li>
-            <li>Sistemas de segurança e relógios de ponto digital</li>
-          </ul>
-        </ul>
+    <div class="flex flex-wrap">
+      <div class="card w-full">
+        <div class="card-body p-0 flex flex-wrap">
+          <div class="w-full mt-2">
+            <h6 class="font-bold text-md">EXPERIÊNCIAS</h6>
+          </div>
+          <div class="w-full mt-1">
+            <ul>
+              <li>
+                Alvitre - Programador Autônomo (02-2017 - atual)
+                <ul class="list-disc ml-8">
+                  <li>
+                    Atualmente desenvolvendo sites e sistemas web com stack vuejs + golang + mysql
+                  </li>
+                  <li>
+                    Sistemas para fintech, hospitalar e gerenciamento financeiro
+                  </li>
+                  <li>Imagens disponíveis no portofólio</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full mt-2">
+            <ul>
+              <li>
+                VDLAP / LS STAR- ANALISTA DE INFORMÁTICA (02-2017 - 02/2019)
+                <ul class="list-disc ml-8">
+                  <li>
+                    Desenvolvimento de site e sistema ERP das duas empresas
+                  </li>
+                  <li>
+                    Suporte a usuários, manutenção de rede, servidores linux e
+                    windows
+                  </li>
+                  <li>Responsavel por toda área de tecnologia da empresa</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full mt-2">
+            <ul>
+              <li>
+                SUPORTE FS - SUPORTE TÉCNICO (02/2016 - 01-2017)
+                <ul class="list-disc ml-8">
+                  <li>
+                    Desenvolvimento de sistema ERP, migração de ASP clássico
+                    para ASP.NET
+                  </li>
+                  <li>
+                    Criação e manutenção do website da empresa na linguagem
+                    PHP
+                  </li>
+                  <li>
+                    Suporte a usuários, manutenção de hardware e software
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full mt-4">
+            <ul>
+              <li>
+                FACULDADE CARLOS DRUMMOND DE ANDRADE - MONITOR EM LABORATÓRIO
+                DE INFORMÁTICA (04/2012 – 01/2015)
+                <ul class="list-disc ml-8">
+                  <li>
+                    Suporte a usuários, manutenção de hardware e software
+                  </li>
+                  <li>
+                    Instalação de recursos áudio visuais, cabeamento
+                    estruturado
+                  </li>
+                  <li>
+                    Controle de acessos Proxy, Active Directory, protocolos de
+                    rede
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row row-margin">
-      <div class="col-2">
-        <h6>HABILIDADES</h6>
-      </div>
-      <div class="col-10">
-        <div class="row">
-          <div class="col-4">
+
+
+    <div class="flex flex-wrap mt-4">
+      <!--  <div class="w-full mt-2">
+        <h6 class="font-bold text-md">ESCOLARIDADE</h6>
+      </div> -->
+      <div class="w-full mt-1">
+        <div class="flex">
+          <div class="w-2/3">
             <ul>
-              <li>S.O.</li>
-              <ul>
-                <li>Linux</li>
-                <li>Terminal</li>
-                <li>Windows</li>
+              <li> <span class="font-bold">ENSINO SUPERIOR </span> - Universidade nove de julho (12/2016 - 01/2019)</li>
+              <ul class="ml-4">
+                <li>Analise e desenvolvimento de sistemas</li>
               </ul>
             </ul>
-
-            <ul>
-              <li>FRONT-END</li>
-              <ul>
-                <li>HTML 5</li>
-                <li>CSS 3</li>
-                <li>Bootstrap</li>
-                <li>Javascript</li>
-                <li>VueJs</li>                
-              </ul>
-            </ul>
-
-            <ul>
-                <li>BANCO DE DADOS</li>
-                <ul>
-                  <li>MYSQL</li>
-                  <li>SQL Server</li>
-                </ul>
-              </ul>
-
-
           </div>
-          <div class="col-4">
 
-
+          <div class="w-1/3">
             <ul>
-              <li>BACK-END</li>
-              <ul>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>Lumen</li>
-                <li>Wordpress</li>          
+              <li><span class="font-bold">Habilitação</span></li>
+              <ul class="ml-4">
+                <li>Categoria: B</li>
               </ul>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap">
+      <div class="w-full mt-2">
+        <h6 class="font-bold text-md">CURSOS</h6>
+      </div>
+      <div class="w-2/3 mt-1 border-r pr-4">
+        <table class="table table-compact w-full">
+          <tbody class="text-xs">
+            <tr class="py-0 text-xs">
+              <td class="py-0 text-xs">MEC - Ministério da Educação</td>
+              <td class="py-0 text-xs">A Importância de Analisar a
+                Qualidade da Internet</td>
+              <!--               <td class="py-0 text-xs">12/2022</td>
+ -->
+            <tr>
+
+              <td class="py-0 text-xs">MEC - Ministério da Educação</td>
+              <td class="py-0 text-xs">Introdução ao Pensamento
+                Computacional</td>
+              <!--               <td class="py-0 text-xs">01/2022</td>
+ -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">SENAI</td>
+              <td class="py-0 text-xs">Desvendando a Blockchain</td>
+              <!--               <td class="py-0 text-xs">01/2022</td>
+                                   -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">SENAI</td>
+              <td class="py-0 text-xs">Tecnologia da informação e comunicação</td>
+              <!--               <td class="py-0 text-xs">10/2016</td>
+             -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">SENAI</td>
+              <td class="py-0 text-xs">Lógica de programação</td>
+              <!--               <td class="py-0 text-xs">09/2016</td>
+             -->
+            </tr>
+
+            <tr>
+              <td class="py-0 text-xs">SEBRAE</td>
+              <td class="py-0 text-xs">Microempreendedor Individual</td>
+              <!--               <td class="py-0 text-xs">06/2016</td>
+             -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">ORIGAMID</td>
+              <td class="py-0 text-xs">Javascript Completo ES6+</td>
+              <!--               <td class="py-0 text-xs">10/2020</td>
+ -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">ORIGAMID</td>
+              <td class="py-0 text-xs">VueJs Completo</td>
+              <!--               <td class="py-0 text-xs">03/2020</td>
+ -->
+            </tr>
+
+
+
+            <tr>
+              <td class="py-0 text-xs">CNA</td>
+              <td class="py-0 text-xs">Inglês - Basic 1</td>
+              <!--               <td class="py-0 text-xs">06/2018</td>
+               -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">CHANNEL 9 - UNINOVE</td>
+              <td class="py-0 text-xs">Inglês</td>
+              <!--               <td class="py-0 text-xs">04/2018</td>
+               -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">FUNDAÇÃO BRADESCO</td>
+              <td class="py-0 text-xs">Introdução ao javascript</td>
+              <!--               <td class="py-0 text-xs">03/2019</td>
+             -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">FUNDAÇÃO BRADESCO</td>
+              <td class="py-0 text-xs">Microsoft Windows</td>
+              <!--               <td class="py-0 text-xs">03/2019</td>
+             -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">FUNDAÇÃO BRADESCO</td>
+              <td class="py-0 text-xs">Microsoft PowerPoint</td>
+              <!--               <td class="py-0 text-xs">03/2019</td>
+             -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">FUNDAÇÃO BRADESCO</td>
+              <td class="py-0 text-xs">Microsoft Excel</td>
+              <!--               <td class="py-0 text-xs">03/2019</td>
+             -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">FUNDAÇÃO BRADESCO</td>
+              <td class="py-0 text-xs">Microsoft Outlook</td>
+              <!--               <td class="py-0 text-xs">03/2019</td>
+             -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">FUNDAÇÃO BRADESCO</td>
+              <td class="py-0 text-xs">Linguagem de programação c#</td>
+              <!--               <td class="py-0 text-xs">01/2019</td>
+             -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">FUNDAÇÃO BRADESCO</td>
+              <td class="py-0 text-xs">Empreendedorismo e inovação</td>
+              <!--               <td class="py-0 text-xs">03/2016</td>
+ -->
+            </tr>
+            <tr>
+              <td class="py-0 text-xs">FUNDAÇÃO BRADESCO</td>
+              <td class="py-0 text-xs">HTML5</td>
+              <!--               <td class="py-0 text-xs">04/2013</td>
+ -->
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap mt-2">
+      <div class="w-full mt-1">
+        <h6 class="font-bold text-md">HABILIDADES</h6>
+      </div>
+      <div class="w-full mt-1">
+        <div class="flex">
+          <div class="w-1/4">
             <ul>
               <li>FERRAMENTAS</li>
-              <ul>
+              <ul class="ml-4">
+                <li>Linux | Terminal</li>
                 <li>GIT e GITHUB</li>
-                <li>Composer</li>
-                <li>YARN</li>
-                <li>NPM</li>
-                <li>GUMP</li>
+                <li>NODE | NPM/
+                <li>
+                <li>Gump</li>
                 <li>VSCode</li>
                 <li>Postman</li>
               </ul>
             </ul>
-          </div>
-          <div class="col-4">
-              <ul>
-                  <li>DESIGN</li>
-                  <ul>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Gimp</li>
-                    <li>Gravit Designer</li>
-                  </ul>
-                </ul>
-           
 
+
+          </div>
+          <div class="w-1/4">
             <ul>
-              <li>ESCRITÓRIO</li>
-              <ul>
-                <li>Pacote Office</li>
-                <li>Pacote LibreOffice</li>
+              <li>FULLSTACK</li>
+              <ul class="ml-4">
+                <li>PHP | Wordpress | Laravel</li>
+                <li>Golang </li>
+                <li>CSS 3</li>
+                <li>Bootstrap | Tailwind</li>
+                <li>MYSQL</li>
+                <li>SQL Server</li>
+                <li>DOCKER</li>
               </ul>
             </ul>
+
+          </div>
+          <div class="w-1/4">
             <ul>
-              <li>ESTUDANDO</li>
-              <ul>
-                <li>Node</li>
-                <li>Ionic</li>
-                <li>Adonis Js</li>
+              <li>DESIGN</li>
+              <ul class="ml-4">
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Gimp</li>
+                <li>Corel Vector</li>
+                <li>Font Awesome</li>
+                <li>Iconify</li>
               </ul>
             </ul>
           </div>
@@ -175,77 +350,23 @@
       </div>
     </div>
 
-    <div class="row row-margin">
-      <div class="col-2">
-        <h6>ESCOLARIDADE</h6>
+    <div class="flex flex-wrap mt-1">
+      <div class="w-full">
+        <h6 class="font-bold text-md">INFORMAÇÕES</h6>
       </div>
-      <div class="col-10">
-        <ul>
-          <li>ENSINO SUPERIOR (12/2016 - CURSANDO)</li>
-          <ul>
-            <li>Analise e desenvolvimento de sistemas </li>
-            <li>Universidade nove de julho</li>
-          </ul>
-        </ul>
-       <div class="row">
-          <div class="col-6">
-              <ul>
-                  <li>Idiomas</li>
-                  <ul>
-                    <li>Português - Materno</li>
-                    <li>Inglês - CNA - Basic 1</li>
-                  </ul>
-                </ul>
-           </div>
-            <div class="col-6">
-                <ul>
-                    <li>Habilitação</li>
-                    <ul>
-                      <li>Categoria: B</li>                      
-                    </ul>
-                  </ul>
-            </div>
-       </div>
-
-      </div>
-    </div>
-
-    <div class="row row-margin">
-      <div class="col-2">
-        <h6>CURSOS</h6>
-      </div>
-      <div class="col-10">
-        <ul>
-          <li>SENAI: (10/2016) – TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO</li>
-          <li>SENAI: (09/2016) - LÓGICA DE PROGRAMAÇÃO</li>
-          <li>FUNDAÇÃO BRADESCO: (04/2013) - HTML5<br></li>
+      <div class="w-fullmt-1">
+        <ul class="ml-4">
+          <li>Estou trabalhando no desenvolvimento diário de sistemas com <br> GOLANG | VUEJS | TAILWIND | MYSQL |
+            DOCKER
+          </li>
+          <!-- <li>
+            EMPRESA MEI: <a href="http://www.alvitre.net">www.alvitre.com.br</a>
+          </li> -->
         </ul>
       </div>
     </div>
 
-    <div class="row row-margin">
-      <div class="col-2">
-        <h6>INFORMAÇÕES</h6>
-      </div>
-      <div class="col-10">
-        <ul>
-          <li>GITHUB: <a href="http://github.com/jserranojunior">www.github.com/jserranojunior</a> <br></li>
-          <li>EMPRESA MEI: <a href="http://www.alvitre.net">www.alvitre.net</a> </li>
-          <li>PORTFÓLIO: <a href="http://www.alvitre.net/portfolio">www.alvitre.net/portfolio</a></li>
-        </ul>
-
-      </div>
-    </div>
-
-
-    <footer>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-    </footer>
+    <footer></footer>
   </div>
 </body>
 
